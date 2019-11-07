@@ -10,7 +10,7 @@ export default function Todo(props) {
       <button
         type="button"
         className="btn btn-danger float-right"
-        onClick={() => props.cancellaDallaLista(props.Id)}
+        onClick={() => props.cancellaDallaLista(props._id)}
       >
         Cancella
       </button>

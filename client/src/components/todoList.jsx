@@ -3,10 +3,11 @@ import Todo from "./todo";
 
 export class TodoList extends Component {
   render() {
-    const lista = this.props.coseDaFareArray.map(elemento => (
+    const lista = this.props.coseDaFareArray.map((elemento, index) => (
       <Todo
         testo={elemento.testo}
-        Id={elemento.Id}
+        _id={elemento._id}
+        Id={index + 1}
         cancellaDallaLista={this.props.cancellaDallaLista}
       />
     ));
